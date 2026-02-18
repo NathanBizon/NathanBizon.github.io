@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Bizon – Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+    <div class="container nav-inner">
+        <a href="#hero" class="nav-logo">NB</a>
+        <nav class="nav-links" id="nav-links">
+            <a href="#about"      data-fr="À propos"     data-en="About">À propos</a>
+            <a href="#skills"     data-fr="Compétences"  data-en="Skills">Compétences</a>
+            <a href="#experience" data-fr="Expériences"  data-en="Experience">Expériences</a>
+            <a href="#projects"   data-fr="Projets"      data-en="Projects">Projets</a>
+            <a href="#education"  data-fr="Formation"    data-en="Education">Formation</a>
+            <a href="#activities" data-fr="Activités"    data-en="Activities">Activités</a>
+            <a href="#contact"    data-fr="Contact"      data-en="Contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                <span class="lang-option active" id="lang-fr">FR</span>
+                <span class="lang-separator">/</span>
+                <span class="lang-option" id="lang-en">EN</span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+    <div class="container hero-inner">
+        <div class="hero-badge">
+            <span data-fr="Disponible pour un stage international dès mai 2027" data-en="Available for international internship from May 2027">Disponible pour un stage international dès mai 2027</span>
+        </div>
+        <h1 class="hero-name">Nathan Bizon</h1>
+        <p class="hero-title" data-fr="Alternant Informatique Industrielle" data-en="Industrial IT Work-Study Engineer">Alternant Informatique Industrielle</p>
+        <p class="hero-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Maulévrier, Pays de la Loire, France
+        </p>
+        <p class="hero-desc"
+           data-fr="Alternant en informatique industrielle, spécialisé dans les systèmes ERP, l'automatisation et le data engineering — à la recherche d'un stage international de 3–4 mois à partir de mai 2027."
+           data-en="Industrial IT engineering student and work-study trainee, focused on ERP data flows, automation and data engineering — seeking a 3–4 month international internship starting May 2027.">
+            Alternant en informatique industrielle, spécialisé dans les systèmes ERP, l'automatisation et le data engineering — à la recherche d'un stage international de 3–4 mois à partir de mai 2027.
+        </p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-fr="Voir mes projets" data-en="View my projects">Voir mes projets</a>
+            <a href="#contact"  class="btn btn-outline" data-fr="Me contacter"     data-en="Contact me">Me contacter</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span data-fr="Découvrir" data-en="Discover">Découvrir</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title" data-fr="À propos" data-en="About">À propos</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p data-fr="Étudiant ingénieur au CESI en informatique industrielle, je réalise mon alternance dans un environnement de systèmes d'information industriels — ERP, CPQ et flux de données. Mon quotidien consiste à concevoir et améliorer des solutions logicielles qui s'intègrent dans des processus industriels réels, où la fiabilité des données est primordiale."
+                   data-en="I am an engineering student at CESI specialising in industrial IT, carrying out my work-study in an industrial information systems environment — ERP, CPQ and data flows. My day-to-day work involves designing and improving software solutions that integrate into real industrial processes where data reliability is paramount.">
+                   Étudiant ingénieur au CESI en informatique industrielle, je réalise mon alternance dans un environnement de systèmes d'information industriels — ERP, CPQ et flux de données. Mon quotidien consiste à concevoir et améliorer des solutions logicielles qui s'intègrent dans des processus industriels réels, où la fiabilité des données est primordiale.
+                </p>
+                <p data-fr="Je m'intéresse particulièrement au data engineering, à l'intégration et au traitement de données à grande échelle, ainsi qu'aux applications concrètes dans l'industrie. J'ai une double appétence pour les solutions desktop robustes et les pipelines de données performants."
+                   data-en="I am particularly interested in data engineering, large-scale data integration and processing, and their concrete applications in industry. I have a dual passion for robust desktop solutions and high-performance data pipelines.">
+                   Je m'intéresse particulièrement au data engineering, à l'intégration et au traitement de données à grande échelle, ainsi qu'aux applications concrètes dans l'industrie. J'ai une double appétence pour les solutions desktop robustes et les pipelines de données performants.
+                </p>
+                <p data-fr="Dans chaque projet, je pense d'abord à l'utilisateur final — qualité de l'expérience, cohérence visuelle, esthétique — tout en gardant une architecture solide en arrière-plan. Mon objectif est de contribuer à des projets innovants en concevant des solutions performantes, en équipe."
+                   data-en="In every project, I put the end user first — experience quality, visual consistency, aesthetics — while maintaining a solid architecture underneath. My goal is to contribute to innovative projects by designing robust, high-performance solutions as part of a team.">
+                   Dans chaque projet, je pense d'abord à l'utilisateur final — qualité de l'expérience, cohérence visuelle, esthétique — tout en gardant une architecture solide en arrière-plan. Mon objectif est de contribuer à des projets innovants en concevant des solutions performantes, en équipe.
+                </p>
+            </div>
+            <div class="about-soft-skills">
+                <h3 data-fr="Soft skills" data-en="Soft Skills">Soft skills</h3>
+                <ul class="soft-skill-list">
+                    <li><span class="soft-icon">🎯</span> <span data-fr="Rigueur &amp; structuration" data-en="Rigour &amp; structure">Rigueur &amp; structuration</span></li>
+                    <li><span class="soft-icon">🤝</span> <span data-fr="Travail en équipe" data-en="Teamwork">Travail en équipe</span></li>
+                    <li><span class="soft-icon">🔍</span> <span data-fr="Curiosité" data-en="Curiosity">Curiosité</span></li>
+                    <li><span class="soft-icon">💡</span> <span data-fr="Créativité" data-en="Creativity">Créativité</span></li>
+                    <li><span class="soft-icon">🧘</span> <span data-fr="Patience" data-en="Patience">Patience</span></li>
+                    <li><span class="soft-icon">🚀</span> <span data-fr="Autonomie" data-en="Autonomy">Autonomie</span></li>
+                    <li><span class="soft-icon">❤️</span> <span data-fr="Empathie utilisateur (UX)" data-en="User empathy (UX)">Empathie utilisateur (UX)</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section section-alt" id="skills">
+    <div class="container">
+        <h2 class="section-title" data-fr="Compétences" data-en="Skills">Compétences</h2>
+        <div class="skills-grid">
+
+            <!-- Langages -->
+            <div class="skill-category">
+                <h3 data-fr="Langages de programmation" data-en="Programming Languages">Langages de programmation</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Python</span><span class="skill-level level-expert" data-fr="Expert" data-en="Expert">Expert</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">C# / .NET</span><span class="skill-level level-advanced" data-fr="Avancé" data-en="Advanced">Avancé</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">C++</span><span class="skill-level level-intermediate" data-fr="Intermédiaire" data-en="Intermediate">Intermédiaire</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:50%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Java</span><span class="skill-level level-beginner" data-fr="Débutant" data-en="Beginner">Débutant</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:25%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data -->
+            <div class="skill-category">
+                <h3 data-fr="Données &amp; Bases de données" data-en="Data &amp; Databases">Données &amp; Bases de données</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">SQL</span><span class="skill-level level-advanced" data-fr="Avancé" data-en="Advanced">Avancé</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">MySQL</span><span class="skill-level level-intermediate" data-fr="Intermédiaire" data-en="Intermediate">Intermédiaire</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:55%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Redis</span><span class="skill-level level-beginner" data-fr="Débutant" data-en="Beginner">Débutant</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:20%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Architecture -->
+            <div class="skill-category">
+                <h3 data-fr="Architecture &amp; Paradigmes" data-en="Architecture &amp; Paradigms">Architecture &amp; Paradigmes</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">MVVM / MVC</span><span class="skill-level level-expert" data-fr="Expert" data-en="Expert">Expert</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:92%"></div></div>
+                    </div>
+                </div>
+                <div class="tag-list">
+                    <span class="tag" data-fr="Architecture logicielle" data-en="Software Architecture">Architecture logicielle</span>
+                    <span class="tag" data-fr="Flux ERP" data-en="ERP Flows">Flux ERP</span>
+                    <span class="tag" data-fr="Automatisation" data-en="Automation">Automatisation</span>
+                    <span class="tag" data-fr="Systèmes industriels" data-en="Industrial Systems">Systèmes industriels</span>
+                </div>
+            </div>
+
+            <!-- Outils -->
+            <div class="skill-category">
+                <h3 data-fr="Outils &amp; Environnement" data-en="Tools &amp; Environment">Outils &amp; Environnement</h3>
+                <div class="tag-list">
+                    <span class="tag">JetBrains IDEs</span>
+                    <span class="tag">Visual Studio Code</span>
+                    <span class="tag">Git / GitHub</span>
+                    <span class="tag">GitHub Copilot</span>
+                    <span class="tag">Jira</span>
+                    <span class="tag">Confluence</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Markdown</span>
+                    <span class="tag">PlantUML</span>
+                    <span class="tag">Mermaid</span>
+                    <span class="tag">DocFX</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">Infor M3</span>
+                    <span class="tag">ERP SAP</span>
+                    <span class="tag">CPQ</span>
+                    <span class="tag">PAO</span>
+                </div>
+            </div>
+
+            <!-- Langues -->
+            <div class="skill-category">
+                <h3 data-fr="Langues" data-en="Languages">Langues</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name" data-fr="Français" data-en="French">Français</span>
+                            <span class="skill-level level-expert" data-fr="Natif" data-en="Native">Natif</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:100%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name" data-fr="Anglais" data-en="English">Anglais</span>
+                            <span class="skill-level level-advanced" data-fr="Professionnel – TOEIC 875" data-en="Professional – TOEIC 875">Professionnel – TOEIC 875</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:82%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section" id="experience">
+    <div class="container">
+        <h2 class="section-title" data-fr="Expériences" data-en="Experience">Expériences</h2>
+        <div class="timeline">
+
+            <!-- SPPF -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" data-fr="Alternant Informatique Industrielle" data-en="Industrial IT Work-Study Trainee">Alternant Informatique Industrielle</h3>
+                            <p class="card-company">SPPF</p>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">2025 – 2028</span>
+                            <span class="card-location">Cholet, France</span>
+                            <span class="card-badge" data-fr="Alternance · 3 ans" data-en="Work-Study · 3 years">Alternance · 3 ans</span>
+                        </div>
+                    </div>
+                    <ul class="card-bullets">
+                        <li data-fr="Migration ERP vers Infor M3 : participation à l'intégration et à la fiabilisation des flux de données." data-en="ERP migration to Infor M3: involvement in data flow integration and reliability.">Migration ERP vers Infor M3 : participation à l'intégration et à la fiabilisation des flux de données.</li>
+                        <li data-fr="Intégration de systèmes CPQ (Configure, Price, Quote) dans l'environnement de production." data-en="Integration of CPQ (Configure, Price, Quote) systems into the production environment.">Intégration de systèmes CPQ (Configure, Price, Quote) dans l'environnement de production.</li>
+                        <li data-fr="Publication assistée par ordinateur (PAO) et data mashups autour des données ERP." data-en="Desktop publishing (DTP) and data mashups around ERP data.">Publication assistée par ordinateur (PAO) et data mashups autour des données ERP.</li>
+                        <li data-fr="Focus sur la fiabilité des données et l'interopérabilité des systèmes d'information industriels." data-en="Focus on data reliability and industrial information system interoperability.">Focus sur la fiabilité des données et l'interopérabilité des systèmes d'information industriels.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Thales -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" data-fr="Stagiaire SI / RPA Developer" data-en="IS Intern / RPA Developer">Stagiaire SI / RPA Developer</h3>
+                            <p class="card-company">Thales</p>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date" data-fr="Avr. – Août 2025" data-en="Apr. – Aug. 2025">Avr. – Août 2025</span>
+                            <span class="card-badge" data-fr="Stage · 4–5 mois" data-en="Internship · 4–5 months">Stage · 4–5 mois</span>
+                        </div>
+                    </div>
+                    <ul class="card-bullets">
+                        <li data-fr="Cartographie et amélioration d'un programme d'extraction de données ERP (performance, fiabilité)." data-en="Mapping and improvement of an ERP data extraction programme (performance, reliability).">Cartographie et amélioration d'un programme d'extraction de données ERP (performance, fiabilité).</li>
+                        <li data-fr="Prototypage de solutions de Business Intelligence." data-en="Prototyping of Business Intelligence solutions.">Prototypage de solutions de Business Intelligence.</li>
+                        <li data-fr="Amélioration et documentation de scripts RPA (Robotic Process Automation)." data-en="Improvement and documentation of RPA (Robotic Process Automation) scripts.">Amélioration et documentation de scripts RPA (Robotic Process Automation).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Europe Snacks -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" data-fr="Opérateur en agro-industrie" data-en="Agri-Food Industry Operator">Opérateur en agro-industrie</h3>
+                            <p class="card-company">Europe Snacks France</p>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date" data-fr="Juin – Sep. 2024" data-en="Jun. – Sep. 2024">Juin – Sep. 2024</span>
+                            <span class="card-location" data-fr="La Séguinière, France" data-en="La Séguinière, France">La Séguinière, France</span>
+                        </div>
+                    </div>
+                    <ul class="card-bullets">
+                        <li data-fr="Paramétrage d'une ligne de conditionnement automatisée." data-en="Configuration of an automated packaging line.">Paramétrage d'une ligne de conditionnement automatisée.</li>
+                        <li data-fr="Mise en carton, palettisation et contrôle qualité." data-en="Box packing, palletising and quality control.">Mise en carton, palettisation et contrôle qualité.</li>
+                        <li data-fr="Entretien de premier niveau du matériel industriel." data-en="First-level maintenance of industrial equipment.">Entretien de premier niveau du matériel industriel.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Stages découverte -->
+            <div class="timeline-item">
+                <div class="timeline-dot timeline-dot--small"></div>
+                <div class="timeline-card timeline-card--minor">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" data-fr="Stages de découverte IT / Cybersécurité" data-en="IT / Cybersecurity Discovery Internships">Stages de découverte IT / Cybersécurité</h3>
+                            <p class="card-company">Batistyl &amp; Thales</p>
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-date">2019 – 2021</span>
+                        </div>
+                    </div>
+                    <p class="card-desc" data-fr="Découverte des services IT industriels et de l'environnement cybersécurité." data-en="Discovery of industrial IT services and the cybersecurity environment.">Découverte des services IT industriels et de l'environnement cybersécurité.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section section-alt" id="projects">
+    <div class="container">
+        <h2 class="section-title" data-fr="Projets" data-en="Projects">Projets</h2>
+        <div class="projects-grid">
+
+            <!-- EasySave -->
+            <div class="project-card project-card--featured">
+                <div class="project-card-top">
+                    <span class="project-tags">
+                        <span class="tag">C# / .NET</span>
+                        <span class="tag">WPF</span>
+                        <span class="tag">MVVM</span>
+                        <span class="tag">DocFX</span>
+                        <span class="tag">GitHub</span>
+                    </span>
+                    <span class="project-status" data-fr="v2.0 · En cours" data-en="v2.0 · In progress">v2.0 · En cours</span>
+                </div>
+                <h3 class="project-title">EasySave</h3>
+                <p class="project-subtitle" data-fr="Application de sauvegarde – Projet d'équipe" data-en="Backup application – Team project">Application de sauvegarde – Projet d'équipe</p>
+                <div class="project-section">
+                    <h4 data-fr="Contexte" data-en="Context">Contexte</h4>
+                    <p data-fr="Application desktop de gestion de sauvegardes développée en équipe dans le cadre du cursus CESI. La v2.0 est finalisée et la v3.0 est prévue fin février." data-en="Desktop backup management application developed as a team project within the CESI curriculum. v2.0 is finalised and v3.0 is planned for end of February.">Application desktop de gestion de sauvegardes développée en équipe dans le cadre du cursus CESI. La v2.0 est finalisée et la v3.0 est prévue fin février.</p>
+                </div>
+                <div class="project-section">
+                    <h4 data-fr="Mon rôle" data-en="My role">Mon rôle</h4>
+                    <ul>
+                        <li data-fr="Développement du système de configuration (profils, options, persistance des préférences)." data-en="Development of the configuration system (profiles, options, preference persistence).">Développement du système de configuration (profils, options, persistance des préférences).</li>
+                        <li data-fr="Design et style de l'interface utilisateur (cohérence visuelle, UX)." data-en="UI design and styling (visual consistency, UX).">Design et style de l'interface utilisateur (cohérence visuelle, UX).</li>
+                        <li data-fr="Mise en place d'une documentation technique automatique avec DocFX." data-en="Set up automatic technical documentation with DocFX.">Mise en place d'une documentation technique automatique avec DocFX.</li>
+                        <li data-fr="Gestion des issues et pull requests GitHub (revue de code, priorisation)." data-en="GitHub issue and pull request management (code review, prioritisation).">Gestion des issues et pull requests GitHub (revue de code, priorisation).</li>
+                    </ul>
+                </div>
+                <div class="project-section">
+                    <h4 data-fr="Défi résolu" data-en="Key challenge solved">Défi résolu</h4>
+                    <p data-fr="Correction de la gestion d'erreurs lors de sauvegardes vers un disque externe non connecté, avec ajout d'un affichage d'erreur clair et informatif pour l'utilisateur." data-en="Fixed error handling for backups targeting a disconnected external drive, adding a clear and informative error display for the user.">Correction de la gestion d'erreurs lors de sauvegardes vers un disque externe non connecté, avec ajout d'un affichage d'erreur clair et informatif pour l'utilisateur.</p>
+                </div>
+                <a href="https://github.com/CriosChan/EasySave" target="_blank" rel="noopener" class="project-link" data-fr="Voir sur GitHub →" data-en="View on GitHub →">Voir sur GitHub →</a>
+            </div>
+
+            <!-- CESITools -->
+            <div class="project-card">
+                <div class="project-card-top">
+                    <span class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Streamlit</span>
+                    </span>
+                    <span class="project-status project-status--done" data-fr="Réalisé" data-en="Completed">Réalisé</span>
+                </div>
+                <h3 class="project-title">CESITools</h3>
+                <p class="project-subtitle" data-fr="Outil web interne – Projet CESI" data-en="Internal web tool – CESI project">Outil web interne – Projet CESI</p>
+                <div class="project-section">
+                    <h4 data-fr="Contexte" data-en="Context">Contexte</h4>
+                    <p data-fr="Application web développée en Python avec Streamlit dans le cadre du CESI, visant à faciliter certains usages internes pour les étudiants et l'équipe pédagogique." data-en="Web application developed in Python with Streamlit as part of the CESI curriculum, aimed at facilitating certain internal uses for students and the teaching team.">Application web développée en Python avec Streamlit dans le cadre du CESI, visant à faciliter certains usages internes pour les étudiants et l'équipe pédagogique.</p>
+                </div>
+                <a href="https://github.com/SodiumBismuth/CESITools" target="_blank" rel="noopener" class="project-link" data-fr="Voir sur GitHub →" data-en="View on GitHub →">Voir sur GitHub →</a>
+            </div>
+
+            <!-- Mods Minecraft -->
+            <div class="project-card">
+                <div class="project-card-top">
+                    <span class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag" data-fr="Expérimental" data-en="Experimental">Expérimental</span>
+                    </span>
+                    <span class="project-status project-status--personal" data-fr="Personnel" data-en="Personal">Personnel</span>
+                </div>
+                <h3 class="project-title" data-fr="Mods Minecraft" data-en="Minecraft Mods">Mods Minecraft</h3>
+                <p class="project-subtitle" data-fr="Modding expérimental – Apprentissage Java" data-en="Experimental modding – Java learning">Modding expérimental – Apprentissage Java</p>
+                <div class="project-section">
+                    <p data-fr="Développement expérimental de mods Minecraft sans publication officielle. Ce projet illustre ma curiosité, mon exploration du langage Java et ma créativité à travers des projets personnels." data-en="Experimental Minecraft mod development without official publication. This project illustrates my curiosity, my exploration of the Java language, and my creativity through personal projects.">Développement expérimental de mods Minecraft sans publication officielle. Ce projet illustre ma curiosité, mon exploration du langage Java et ma créativité à travers des projets personnels.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="section" id="education">
+    <div class="container">
+        <h2 class="section-title" data-fr="Formation" data-en="Education">Formation</h2>
+        <div class="edu-timeline">
+
+            <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div>
+                            <h3 data-fr="Diplôme d'Ingénieur – Informatique Industrielle" data-en="Engineering Degree – Industrial IT">Diplôme d'Ingénieur – Informatique Industrielle</h3>
+                            <p class="edu-institution">CESI École d'Ingénieurs</p>
+                        </div>
+                        <span class="edu-date">2023 – 2028</span>
+                    </div>
+                    <p class="edu-detail" data-fr="Campus Saint-Nazaire (2023–2025) puis La Rochelle (2025–2028) · Pédagogie par projets · Spécialisation informatique industrielle" data-en="Saint-Nazaire campus (2023–2025) then La Rochelle (2025–2028) · Project-based learning · Industrial IT specialisation">Campus Saint-Nazaire (2023–2025) puis La Rochelle (2025–2028) · Pédagogie par projets · Spécialisation informatique industrielle</p>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-dot edu-dot--past"></div>
+                <div class="edu-card edu-card--past">
+                    <div class="edu-header">
+                        <div>
+                            <h3 data-fr="Baccalauréat Général – NSI &amp; Mathématiques" data-en="French Baccalaureate – Computer Science &amp; Mathematics">Baccalauréat Général – NSI &amp; Mathématiques</h3>
+                            <p class="edu-institution">Lycée Sainte-Marie, Cholet</p>
+                        </div>
+                        <span class="edu-date">2019 – 2022</span>
+                    </div>
+                    <p class="edu-detail" data-fr="Options : Numérique et Sciences Informatiques (NSI), Mathématiques · Participation aux Olympiades de mathématiques" data-en="Specialisations: Digital and Computer Science (NSI), Mathematics · Participated in the Mathematics Olympiad">Options : Numérique et Sciences Informatiques (NSI), Mathématiques · Participation aux Olympiades de mathématiques</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== ACTIVITIES ===== -->
+<section class="section section-alt" id="activities">
+    <div class="container">
+        <h2 class="section-title" data-fr="Activités &amp; Intérêts" data-en="Activities &amp; Interests">Activités &amp; Intérêts</h2>
+        <div class="activities-grid">
+
+            <div class="activity-card">
+                <span class="activity-icon">🏆</span>
+                <h3 data-fr="Nuit de l'Info 2024" data-en="Nuit de l'Info 2024">Nuit de l'Info 2024</h3>
+                <p data-fr="Participation à une compétition web nationale de 24h. 2e place sur un challenge IA basique." data-en="Participation in a 24-hour national web competition. 2nd place in a basic AI challenge.">Participation à une compétition web nationale de 24h. 2e place sur un challenge IA basique.</p>
+            </div>
+
+            <div class="activity-card">
+                <span class="activity-icon">⚜️</span>
+                <h3 data-fr="Scouts et Guides de France" data-en="Scouts et Guides de France">Scouts et Guides de France</h3>
+                <p data-fr="Missions bénévoles : prévention des feux de forêt à Marseille, clean walks à Angers, bénévolat lors d'un festival de cerfs-volants à Penvins." data-en="Volunteer missions: forest fire prevention in Marseille, clean walks in Angers, volunteering at a kite festival in Penvins.">Missions bénévoles : prévention des feux de forêt à Marseille, clean walks à Angers, bénévolat lors d'un festival de cerfs-volants à Penvins.</p>
+            </div>
+
+            <div class="activity-card">
+                <span class="activity-icon">🎮</span>
+                <h3 data-fr="Club de jeux vidéo" data-en="Video Game Club">Club de jeux vidéo</h3>
+                <p data-fr="Rôle de technicien du club au sein du CESI." data-en="Club technician role within CESI.">Rôle de technicien du club au sein du CESI.</p>
+            </div>
+
+            <div class="activity-card">
+                <span class="activity-icon">✨</span>
+                <h3 data-fr="Centres d'intérêt" data-en="Interests">Centres d'intérêt</h3>
+                <p data-fr="Jeux vidéo, maquettes en bois, data engineering, informatique industrielle, philosophie et psychologie — réflexion sur l'humain et l'usage des systèmes." data-en="Video games, wooden scale models, data engineering, industrial IT, philosophy and psychology — reflecting on humans and how systems are used.">Jeux vidéo, maquettes en bois, data engineering, informatique industrielle, philosophie et psychologie — réflexion sur l'humain et l'usage des systèmes.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+    <div class="container">
+        <h2 class="section-title" data-fr="Contact" data-en="Contact">Contact</h2>
+        <p class="contact-intro" data-fr="Vous souhaitez discuter d'un projet, d'une opportunité de stage ou simplement échanger ? N'hésitez pas à me contacter." data-en="Want to discuss a project, an internship opportunity, or just connect? Feel free to reach out.">Vous souhaitez discuter d'un projet, d'une opportunité de stage ou simplement échanger ? N'hésitez pas à me contacter.</p>
+        <div class="contact-cards">
+            <a href="mailto:mail.nathanbizon@gmail.com" class="contact-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">mail.nathanbizon@gmail.com</span>
+            </a>
+            <a href="https://github.com/NathanBizon" target="_blank" rel="noopener" class="contact-card">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">NathanBizon</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nathan-bizon/" target="_blank" rel="noopener" class="contact-card">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">nathan-bizon</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <p data-fr="© 2025 Nathan Bizon · Maulévrier, France" data-en="© 2025 Nathan Bizon · Maulévrier, France">© 2025 Nathan Bizon · Maulévrier, France</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
